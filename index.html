@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+     <head>
+         <link rel="stylesheet" href="style.css">
+         <title>personal portfolio</title>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     </head>
+     <body>
+         <div class="body">
+          <!--header section-->
+              <div class="header">
+                  <h1>Adegbaike Abdulwaris</h1>
+                  <h3>(Aspiring front-end developer)</h3>
+                  <p>Enthusiastic beginner passionate about building clean, responsive websites using HTML and CSS.</p>
+              </div>
+            
+              <!--contact info-->
+              <div class="contacts">
+                   <h2 class="darkgray">Contact info</h2>
+                   <div class="details">
+                       <p class="contact">location: NIGERIA, Lagos</p>
+                       <p><a href="mailto:adegbaikewaris@gmail.com" class="contact">📧 email@adegbaikeabdulwaris</a></p>
+                       <p><a href="https://www.linkedin.com/in/adegbaike-waris-34084726a/" class="contact">🔗 linkedin.com/in/adegbaikewaris</a></p>
+                       <p><a href="tel:+2348081419583" class="contact">📱 +234-808-141-9583</a></p>
+                    </div>
+              </div>
+             
+              <!--skills-->
+              <div class="section">
+                    <h2 class="skills">Skills</h2>
+                    <div class="skillset">
+                        <div class="space-among">
+                            <span>HTML</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 0" data-width="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skillset">
+                        <div class="space-among">
+                            <span>CSS</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                           <div class="skill-fill" style="width: 0" data-width="80%"></div>
+                        </div>
+                   </div>
+                   <div class="skillset">
+                        <div class="space-among">
+                            <span>JavaScript (Basics)</span>
+                            <span>30%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 0" data-width="30%"></div>
+                        </div>
+                    </div>
+                    <div class="skillset">
+                        <div class="space-among">
+                           <span>Responsive Design</span>
+                           <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                           <div class="skill-fill" style="width: 0" data-width="75%"></div>
+                        </div>
+                    </div>
+                    <div classs="skillset">
+                        <div class="space-among">
+                            <span>Git & GitHub</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 0" data-width="50%"></div>
+                        </div>
+                    </div>
+               </div>
+              
+               <!--education-->
+               <div class="section">
+                   <h2 class="skills">Education</h2>
+                   <h3 class="certificate">Certificate in front-end web development</h3>
+                   <h4 class="certificate">App Brewery coding camp</h4>
+                   <ul class="participation">
+                       <li>Completed 300+ hours of coursework on HTML, CSS, and basic JavaScript</li>
+                       <li>Built multiple responsive projects including portfolio website and landing pages</li>
+                       <li>Learned version control with Git and GitHub.</li>
+                   </ul><HR/>
+                   <h3 class="certificate">School Certificate</h3>
+                   <h4 class="certificates">B.Sc Business administration.<br/>National open University of Nigeria(NOUN). 2025</h4>
+               </div>
+              
+               <!--project-->
+               <div class="section">
+                    <h2 class="skills">Projects</h2>
+                    <ul>
+                    <li><div class="projects">
+                        <h3 class="projects">Personal Portfolio Website</h3>
+                        <p class="function">Designed and developed a responsive portfolio website to showcase projects and skills.</p>
+                    </div></li>
+                     <li><div class="projects">
+                        <h3 class="projects">Landing Page for Local Business</h3>
+                        <p class="function">Created a clean, mobile-friendly landing page for a start-up therapy organisation to increase online presence.</p>
+                    </div></li></ul>
+               </div>
+             
+               <!--about me-->
+               <div class="section">
+                   <h2 class="skills">About Me</h2>
+                   <p class=" about">Passionate Web Developer skilled in building responsive and user-friendly web applications. Proficient in HTML, CSS, JavaScript, React, and Node.js, with experience across front-end and back-end development. I enjoy creating clean, efficient solutions and continuously improving my skills to deliver impactful digital experiences.</p>
+               </div>
+                <script>
+  
+  // Animate skill bars on scroll
+    document.addEventListener('DOMContentLoaded', () => {
+      const skillBars = document.querySelectorAll('.skill-fill');
+
+      const skillObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const bar = entry.target;
+              bar.style.width = bar.dataset.width;
+              skillObserver.unobserve(bar);
+            }
+          });
+        },
+        { threshold: 0.5 }
+      );
+
+      skillBars.forEach((bar) => {
+        skillObserver.observe(bar);
+      });
+    });
+  </script>
+         </div>
+     </body>
+</html>

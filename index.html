@@ -1,138 +1,88 @@
 <!DOCTYPE html>
 <html>
-     <head>
-         <link rel="stylesheet" href="style.css">
-         <title>personal portfolio</title>
-         <meta charset="UTF-8">
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     </head>
-     <body>
-         <div class="body">
-          <!--header section-->
-              <div class="header">
-                  <h1>Adegbaike Abdulwaris</h1>
-                  <h3>(Aspiring front-end developer)</h3>
-                  <p>Enthusiastic beginner passionate about building clean, responsive websites using HTML and CSS.</p>
-              </div>
-            
-              <!--contact info-->
-              <div class="contacts">
-                   <h2 class="darkgray">Contact info</h2>
-                   <div class="details">
-                       <p class="contact">location: NIGERIA, Lagos</p>
-                       <p><a href="mailto:adegbaikewaris@gmail.com" class="contact">📧 email@adegbaikeabdulwaris</a></p>
-                       <p><a href="https://www.linkedin.com/in/adegbaike-waris-34084726a/" class="contact">🔗 linkedin.com/in/adegbaikewaris</a></p>
-                       <p><a href="tel:+2348081419583" class="contact">📱 +234-808-141-9583</a></p>
-                    </div>
-              </div>
-             
-              <!--skills-->
-              <div class="section">
-                    <h2 class="skills">Skills</h2>
-                    <div class="skillset">
-                        <div class="space-among">
-                            <span>HTML</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-fill" style="width: 0" data-width="85%"></div>
-                        </div>
-                    </div>
-                    <div class="skillset">
-                        <div class="space-among">
-                            <span>CSS</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill-bar">
-                           <div class="skill-fill" style="width: 0" data-width="80%"></div>
-                        </div>
-                   </div>
-                   <div class="skillset">
-                        <div class="space-among">
-                            <span>JavaScript (Basics)</span>
-                            <span>30%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-fill" style="width: 0" data-width="30%"></div>
-                        </div>
-                    </div>
-                    <div class="skillset">
-                        <div class="space-among">
-                           <span>Responsive Design</span>
-                           <span>75%</span>
-                        </div>
-                        <div class="skill-bar">
-                           <div class="skill-fill" style="width: 0" data-width="75%"></div>
-                        </div>
-                    </div>
-                    <div classs="skillset">
-                        <div class="space-among">
-                            <span>Git & GitHub</span>
-                            <span>50%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-fill" style="width: 0" data-width="50%"></div>
-                        </div>
-                    </div>
-               </div>
-              
-               <!--education-->
-               <div class="section">
-                   <h2 class="skills">Education</h2>
-                   <h3 class="certificate">Certificate in front-end web development</h3>
-                   <h4 class="certificate">App Brewery coding camp</h4>
-                   <ul class="participation">
-                       <li>Completed 300+ hours of coursework on HTML, CSS, and basic JavaScript</li>
-                       <li>Built multiple responsive projects including portfolio website and landing pages</li>
-                       <li>Learned version control with Git and GitHub.</li>
-                   </ul><HR/>
-                   <h3 class="certificate">School Certificate</h3>
-                   <h4 class="certificates">B.Sc Business administration.<br/>National open University of Nigeria(NOUN). 2025</h4>
-               </div>
-              
-               <!--project-->
-               <div class="section">
-                    <h2 class="skills">Projects</h2>
-                    <ul>
-                    <li><div class="projects">
-                        <h3 class="projects">Personal Portfolio Website</h3>
-                        <p class="function">Designed and developed a responsive portfolio website to showcase projects and skills.</p>
-                    </div></li>
-                     <li><div class="projects">
-                        <h3 class="projects">Landing Page for Local Business</h3>
-                        <p class="function">Created a clean, mobile-friendly landing page for a start-up therapy organisation to increase online presence.</p>
-                    </div></li></ul>
-               </div>
-             
-               <!--about me-->
-               <div class="section">
-                   <h2 class="skills">About Me</h2>
-                   <p class=" about">Passionate Web Developer skilled in building responsive and user-friendly web applications. Proficient in HTML, CSS, JavaScript, React, and Node.js, with experience across front-end and back-end development. I enjoy creating clean, efficient solutions and continuously improving my skills to deliver impactful digital experiences.</p>
-               </div>
-                <script>
-  
-  // Animate skill bars on scroll
-    document.addEventListener('DOMContentLoaded', () => {
-      const skillBars = document.querySelectorAll('.skill-fill');
+    <head>
+        <title>Stridelab</title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      const skillObserver = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              const bar = entry.target;
-              bar.style.width = bar.dataset.width;
-              skillObserver.unobserve(bar);
-            }
-          });
-        },
-        { threshold: 0.5 }
-      );
-
-      skillBars.forEach((bar) => {
-        skillObserver.observe(bar);
-      });
-    });
-  </script>
-         </div>
-     </body>
+    </head>
+    <body>
+        <!--section-->
+        <div class="section" id="layout">
+            <!--header-->
+            <div class="header" id="header">
+                <div class="logo">
+                    <div class="logo-html">
+                        <svg aria-label="StrideLab" width="124" height="24" viewBox="0 0 124 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+                            <path d="M8.7 4c-3.4 0-6.2 2-6.2 4.7 0 2.5 2 3.7 4.4 4.3l2.7.7c1.2.3 1.8.8 1.8 1.5 0 .9-1.1 1.6-2.7 1.6-1.6 0-3.1-.6-4.5-1.7l-1.7 2.4C4 18.8 6 19.6 8.6 19.6c3.8 0 6.4-2 6.4-4.8 0-2.6-2.1-3.8-4.6-4.4l-2.5-.6c-1.3-.3-1.9-.8-1.9-1.6 0-1 1.1-1.6 2.5-1.6 1.4 0 2.7.5 3.9 1.4l1.7-2.3C12.7 4.6 10.8 4 8.7 4Z" fill="currentColor"/>
+                            <text x="22" y="17" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="currentColor" letter-spacing=".5">StrideLab</text>
+                        </svg>
+                    </div>
+                </div>
+                <div class="head">
+                    <div class="cta">
+                        <p><a href="#" class="home ctas">Home</a></p>
+                        <p><a href="#" class="features ctas">Features</a></p>
+                        <button class="shop ctas">Shop the drop</button>
+                    </div>
+                </div>
+            </div>
+            <!--body-->
+            <div class="body">
+                <div class="hero">
+                    <div clas="one">
+                        <h1 class="slogan">Engineered <br/>comfort.<br/> Everyday.</h1>
+                    </div>
+                    <div class="two">
+                        <p class="feature">Breathable mesh, cushioned midsole, recycled materials<br/>- our sneakers are built for all-day comfort</p>
+                    </div>
+                    <div class="cta-two">
+                        <button CLASS="shop ctas">Shop the drop</button>
+                        <a href="#" class="about ctas">About us</a>
+                    </div>
+                </div>
+                <div class="hero-img">
+                    <img src="../day 1/assets/shoe.png" class="hero-imgs">
+                </div>
+            </div>
+            <!--cards-->
+            <div class="cards">
+                <div class="card">
+                    <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 6c3 0 3-2 6-2s3 2 6 2 3-2 6-2v2c-3 0-3 2-6 2s-3-2-6-2-3 2-6 2V6Zm0 6c3 0 3-2 6-2s3 2 6 2 3-2 6-2v2c-3 0-3 2-6 2s-3-2-6-2-3 2-6 2v-2Zm0 6c3 0 3-2 6-2s3 2 6 2 3-2 6-2v2c-3 0-3 2-6 2s-3-2-6-2-3 2-6 2v-2Z"/></svg>
+                    <div>
+                        <h4 class="svg-text">Breathable knit</h4>
+                        <p class="card-text">lightweight breathable upper</p>
+                    </div>
+                </div>
+                <div class="card">
+                       <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 16a5 5 0 0 1 4.6-5 4 4 0 0 1 7.7 1A4 4 0 1 1 19 20H8a4 4 0 0 1-1-7.9 5 5 0 0 1 0 3.9Z"/></svg>
+                    <div>
+                        <h4 class="svg-text">Breathable knit</h4>
+                        <p class="card-text">lightweight breathable upper</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6 8 9 4l3 4H9v4H6V8Zm12 0h-3V4l-3 4 3 4h3V8Zm-6 8-3 4H6l3-4h3v-4h3v4Z"/></svg>
+                    <div>
+                        <h4 class="svg-text">Breathable knit</h4>
+                        <p class="card-text">lightweight breathable upper</p>
+                    </div>
+                </div>
+            </div>
+            <!--testimonials-->
+            <div class="testimonials">
+                <h3>"Lightweight and ridiculously comfy.<br/> My daily go to</h3>
+                <p>Tife A.</p>
+            </div>
+            <!--newsletter-->
+            <div class="footer">
+                <p class="newsletter">Get early access to drops</p>
+                <form class="input">     
+                    <input type="email" name="email" id="newsletter" placeholder="enter your email" required >
+                    <input type="submit" value="submit" id="newsletter">
+                </form>
+            </div>
+        </div>
+    </body>
 </html>

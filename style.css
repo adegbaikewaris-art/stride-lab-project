@@ -109,68 +109,7 @@ body{
 .input{
     margin-top: 20px; 
 }
-
-@media (max-width: 400px){
-   .section{
-    min-width: auto;
-   }
-   .header{
-    padding-top: 20px;
-    border: none;
-   }
-   .cta{
-    gap:5px;
-    justify-content: flex-start;
-    font-size: 17px;
-   }
-   .body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-top: 2px solid;
-    margin-top: 10px;
-   }
-   .hero-imgs{
-    width: 250px;
-   }
-   .feature{
-    width: 240px;
-   }
-   .shop{
-    width: 70px;
-    padding: 0;
-    font-size: small;
-   }
-   .cards{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-   }
-   .card{
-    width: 200px;
-    height: 150px;
-   }
-   .cta-two{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-   }
-   .cta-two>.shop{
-    font-size: 30px;
-    width: auto;
-   }
-   .footer{
-    display: flex;
-    flex-direction: column;
-    gap:3px;
-    margin-top: 10px;
-   }
-   .input{
-    margin-top: 2px;
-   }
-}
-@media (min-width: 450px){
+@media (max-width: 450px){
     .one{
         display: flex;
         flex-direction: column;

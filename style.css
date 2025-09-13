@@ -39,7 +39,9 @@ body{
     transition: color 0.2 ease;
 }
 .shop:hover{
-    background-color: #2b225c;
+    background-color: #151031;
+    cursor: pointer;
+    
 }
 .hero-imgs{
     width: 200px;
@@ -134,6 +136,12 @@ body{
         font-size: 1.4rem;
         height: 250px;
     }
+    .card:hover{
+        background-color: #1c2030;
+        cursor: pointer;
+        transform: rotate3d(1, 0, 2, 3deg);
+        transition: transform 0.5s;
+    }
     .card-one{
         grid-column: span 2;
         text-align: center;
@@ -183,6 +191,13 @@ body{
         width: 220px;
         font-size: 1.4rem;
         height: 250px;
+    }
+    .card:hover{
+        background-color: #1c2030;
+        cursor: pointer;
+        transform: rotate3d(1, 0, 2, 3deg);
+        transform: scale(1.15);
+        transition: transform 0.5s;
     }
     .testimonials{
         font-size: 1.8rem;
